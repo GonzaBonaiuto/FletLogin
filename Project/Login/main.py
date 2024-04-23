@@ -53,8 +53,29 @@ container = ft.Container(
         ft.Text(
             "Iniciar sesión con",
             text_align = "center",
-            width = 320
+            width = 320),
+        ft.Container(
+            ft.Row([
+                ft.IconButton(
+                    icon = ft.icons.EMAIL,
+                    tooltip = "Google",
+                    icon_size = 35
+                ),
+                ft.IconButton(
+                    icon = ft.icons.FACEBOOK,
+                    tooltip = "Facebook",
+                    icon_size = 35 
+                ),
+                ft.IconButton(
+                    icon = ft.icons.APPLE,
+                    tooltip = "Apple",
+                    icon_size = 35              
+                )
+            ],
+            alignment = ft.MainAxisAlignment.CENTER
             ),
+            padding = ft.padding.only(20,20),
+        )
         
     ],
     alignment = ft.MainAxisAlignment.SPACE_EVENLY
