@@ -54,6 +54,7 @@ container = ft.Container(
             "Iniciar sesión con",
             text_align = "center",
             width = 320),
+        
         ft.Container(
             ft.Row([
                 ft.IconButton(
@@ -75,8 +76,17 @@ container = ft.Container(
             alignment = ft.MainAxisAlignment.CENTER
             ),
             padding = ft.padding.only(20,20),
+        ),
+        ft.Container(
+            ft.Row([
+                ft.Text("¿No tenés cuenta?"),
+                ft.TextButton("Crear cuenta") 
+            ],
+            alignment = ft.MainAxisAlignment.CENTER
+            )
         )
-        
+    
+    
     ],
     alignment = ft.MainAxisAlignment.SPACE_EVENLY
     ),
