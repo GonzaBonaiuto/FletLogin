@@ -1,6 +1,6 @@
 import flet as ft
 
-# El que lee es puto gonza
+# El que lee es puto palin
 
 container = ft.Container(
     ft.Column([
